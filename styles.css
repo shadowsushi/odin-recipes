@@ -1,3 +1,31 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
 body {
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    animation: rainbow 20s linear infinite;
+    background: #ff0;
+    font-weight: 800;
+}
+
+@keyframes rainbow {
+    0%, 100% {
+        background: cyan;
+    }
+    33% {
+        background: magenta;
+    }
+    
+    66% {
+        background: yellow;
+    }
 }
